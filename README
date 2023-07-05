@@ -1,0 +1,6 @@
+/* README  for ptr11p3
+*  Ptr11p3 is a test mule to demonstrate the interaction of a list head with
+*  a previouly written function. A list head will allow insertEntry() to place
+*  an entry anyplace in the linked list.
+*
+*/
