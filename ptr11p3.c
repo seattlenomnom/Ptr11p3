@@ -37,7 +37,7 @@ int main(int argc, char *argv[]){
 
 /* create four entries and a new entry */
     struct entry n1, n2, n3, n4, newEntry;
-    struct entry listHead, *p2NewEntry, *p2existEntry;
+    struct entry listHead;
 
 /* define the structures */
     n1.value = 100;
@@ -45,6 +45,7 @@ int main(int argc, char *argv[]){
     n3.value = 300;
     n4.value = 400;
     newEntry.value = 500;
+    listHead.value = 0;
 
 /* create the singly linked list */
 
@@ -54,18 +55,16 @@ int main(int argc, char *argv[]){
     n3.next = &n4;
     n4.next = (struct entry *) 0;
     newEntry.next = (struct entry *) 0;
-    p2NewEntry = &newEntry;
 
 /* print original SLL */
 
-    printSLL(listHead.next);
+    printSLL(&listHead);
 
 
 
 /* add new entry to SSL */
-    p2existEntry = &listHead;
 
-    insertEntry(p2NewEntry, p2existEntry);
+    insertEntry(&newEntry, &listHead);
 
 
 /* print new SSL */
