@@ -3,4 +3,15 @@
 *  a previouly written function. A list head will allow insertEntry() to place
 *  an entry anyplace in the linked list.
 *
+*  listHead is an instance of struct entry. Got the program to work correctly.
+*  Somewhere I read that list head could be just a pointer to a struct entry.
+*  But that would the logic of insertEntry less general.
+*
+*  Look at the possiblity of listHead being just a pointer to n1. Where did I
+*  read that? Art of Programming and singly linked lists? The graphics program
+*  that I wrote on the Quadra 650 (MPW, ResEdit, Jasik Debugger).
+*
+*  I wrote this with paper, pencil, eraser. It takes some time, but introduces
+*  fewer bugs to find. I simplified the problem without changing the problem.
+*  I spent time understanding the problem.
 */
